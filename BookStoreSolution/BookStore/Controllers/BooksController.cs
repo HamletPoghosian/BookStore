@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Web;
+
 
 namespace BookStore.Controllers
 {
@@ -34,8 +36,7 @@ namespace BookStore.Controllers
         {
             try
             {
-                // TODO: Add insert logic here
-
+                
                 return RedirectToAction(nameof(Index));
             }
             catch
