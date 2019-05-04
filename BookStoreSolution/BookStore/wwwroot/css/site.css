@@ -37,10 +37,10 @@ body {
     text-align:center;
 }
 .childrow1 {
-    background-color: #f1f1f1;
+    
     justify-content: center;
     width: 100%;
-    height: 300px;
+    height: 100px;
     margin: 5px;
     text-align: center;
     font-size: 30px;
@@ -48,28 +48,28 @@ body {
     transition: width 2s, height 1s;
 }
     .childrow1:hover {
-        background-color: #f1f1f1;
+        background-color: #085046;
         width: 50%;
-        height: 150px;
+        height: 50px;
         margin: 5px;
-        text-align: center;
-        font-size: 30px;
-        background-color: black;
+        text-align: center;        
+        outline-style: solid;
+        outline-color: #086d5f;
     }
 .prow {
     font-family: Arial;
     color: azure;
-    line-height: 50px;
-    text-align: center;
+    line-height: normal;
+    
+    text-align:unset;
     font-size: 20px;
 }
-    .prow:hover {
-        color: #086d5f;
+.prow:hover {       
         text-align: center;
-        font-size: 22px;
+        font-size: 18px;
     }
 .pupliarBook .popH {
-    font-size: 45px;
+    font-size: 30px;
     color:black;
     font-family: Lora,serif;
     text-align: center;
@@ -80,14 +80,19 @@ body {
 }
 .pupliarBook .popL {
     font-size: 20px;
-
     font-family: Lora,serif;
     text-align: center;
 }
+.SeePopBook {
+    width: 100%;
+    display:flex;
+    padding:10px 0 0 10px;
+    background-color: #f1f0f0;
+}
+.SeePopBook 
 .control-label {
-    background-color: #43e67c;
+    background-color: #eb8585;
     color: black;
-    
     font-size: 25px;
     display: flex;
 }
