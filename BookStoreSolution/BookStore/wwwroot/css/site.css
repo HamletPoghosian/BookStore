@@ -26,9 +26,21 @@ body {
 .carousel-inner .item img {
     width: 100%;
 }
-.form-group 
-{
-    color:brown;
+.form-group {
+    color: #336600;
+    font-size: 20px;
+}
+.Button {
+    font-size: 15px;
+    color: #336600;   
+    height:50px;
+   
+    
+}
+Button:hover {
+    color: #336600;
+    padding: 0.2em 1.45em;
+    
 }
 /* QR code generator */
 #qrCode {
