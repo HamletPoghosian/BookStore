@@ -38,14 +38,24 @@ body {
 }
 .childrow1 {
     background-color: #f1f1f1;
+    justify-content: center;
     width: 100%;
-    margin: 10px;
+    height: 300px;
+    margin: 5px;
     text-align: center;
-    
     font-size: 30px;
     background-color: black;
-    
+    transition: width 2s, height 1s;
 }
+    .childrow1:hover {
+        background-color: #f1f1f1;
+        width: 50%;
+        height: 150px;
+        margin: 5px;
+        text-align: center;
+        font-size: 30px;
+        background-color: black;
+    }
 .prow {
     font-family: Arial;
     color: azure;
@@ -77,6 +87,7 @@ body {
 .control-label {
     background-color: #43e67c;
     color: black;
+    
     font-size: 25px;
     display: flex;
 }
