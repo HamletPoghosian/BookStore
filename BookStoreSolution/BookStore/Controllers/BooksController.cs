@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Web;
-
+using BookStore.DataBase;
+using BookStore.Models;
 
 namespace BookStore.Controllers
 {
@@ -32,11 +33,25 @@ namespace BookStore.Controllers
         // POST: Books/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Book collection)
         {
             try
             {
-                
+               
+                using (var db=new AppContextForBook())
+                {
+                    var book = new Book
+                    {
+                        Name=collection.Name,
+                        Author=collection.Author,
+                        Price=collection.Price,
+                        Popular=collection.Popular,
+                        PublishDate=collection.PublishDate
+
+                    };
+                    db.Books.AddRange(book);
+                    db.SaveChanges();
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch
