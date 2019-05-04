@@ -27,19 +27,28 @@ body {
 .carousel-inner .item img {
     width: 100%;
 }
+.row {
+    display: flex;
+  
+}
 
-
+.childrow1 {
+    background-color: #f1f1f1;
+    width: 500px;
+    margin: 10px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 30px;
+}
 .control-label {
     background-color: #086d5f;
     color: black;
     font-size: 18px;
     display: flex;
 }
-.Insert Page Image {
-
-background-color:aqua;
-width:100px;
-height:100px;
+.Insert-Page-Image-book img {
+    
+    height: 350px;
 }
 .Button {
     font-size: 15px;
