@@ -26,7 +26,10 @@ body {
 .carousel-inner .item img {
     width: 100%;
 }
-
+.form-group 
+{
+    color:brown;
+}
 /* QR code generator */
 #qrCode {
     margin: 15px;
@@ -39,3 +42,4 @@ body {
         display: none;
     }
 }
+
