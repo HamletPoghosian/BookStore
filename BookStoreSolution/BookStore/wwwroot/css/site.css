@@ -25,30 +25,68 @@ body {
 
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img {
+  
     width: 100%;
+}
+.rowbook {
+    display: flex;
 }
 .row {
     display: flex;
-  
+    justify-content: center;
+    text-align:center;
 }
-
 .childrow1 {
     background-color: #f1f1f1;
-    width: 500px;
+    width: 100%;
     margin: 10px;
     text-align: center;
-    line-height: 300px;
+    
     font-size: 30px;
+    background-color: black;
+    
+}
+.prow {
+    font-family: Arial;
+    color: azure;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+    .prow:hover {
+        color: #086d5f;
+        text-align: center;
+        font-size: 22px;
+    }
+.pupliarBook .popH {
+    font-size: 45px;
+    color:black;
+    font-family: Lora,serif;
+    text-align: center;
+}
+.poptext {
+    background-color: #f1f0f0;
+    outline-style: outset;
+}
+.pupliarBook .popL {
+    font-size: 20px;
+
+    font-family: Lora,serif;
+    text-align: center;
 }
 .control-label {
-    background-color: #086d5f;
+    background-color: #43e67c;
     color: black;
-    font-size: 18px;
+    font-size: 25px;
     display: flex;
 }
 .Insert-Page-Image-book img {
+    display: flex;
     
-    height: 350px;
+}
+.Insert-Page-Image-book {
+    display: flex;
+    justify-content: center;
 }
 .Button {
     font-size: 15px;
