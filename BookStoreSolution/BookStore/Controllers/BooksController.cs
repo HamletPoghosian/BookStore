@@ -49,8 +49,17 @@ namespace BookStore.Controllers
                         PublishDate=collection.PublishDate
 
                     };
+                    try
+                    {
                     db.Books.AddRange(book);
                     db.SaveChanges();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        throw;
+                    }
                 }
                 return RedirectToAction(nameof(Index));
             }

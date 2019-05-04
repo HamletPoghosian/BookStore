@@ -10,8 +10,7 @@ namespace BookStore.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Author Author { get; set; }        
-        public int AuthorID { get; set; }
+        public string Author { get; set; }
         public DateTime PublishDate { get; set; }
         public int Price { get; set; }
         public int Popular { get; set; }
