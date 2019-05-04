@@ -103,6 +103,21 @@ body {
     font-size: 40px;
 }
 
+.sectiondiv1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:red;
+    height:100px;
+    width:100px;
+}
+.sectionimage {
+    display: flex;
+   
+}
+.section1 {
+    display: flex;
+    flex-wrap: wrap;
+}
 .control-label {
     background-color: #eb8585;
     color: black;
