@@ -47,14 +47,14 @@ body {
     text-align: center;
     font-size: 30px;
     background-color: #ee6e58;
-    transition: width 2s, height 1s;
+    transition: width 0.5s, height 0.5s;
     outline: 4px solid #000000;
 }
 
     .childrow1:hover {
         background-color: #085046;
-        width: 110%;
-        height: 210px;
+        width: 103%;
+        height: 203px;
         margin: 5px;
         text-align: center;
         outline-style: solid;
