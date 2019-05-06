@@ -52,8 +52,8 @@ body {
 
     .childrow1:hover {
         background-color: #085046;
-        width: 50%;
-        height: 50px;
+        width: 110%;
+        height: 110px;
         margin: 5px;
         text-align: center;
         outline-style: solid;
@@ -84,12 +84,14 @@ body {
     background-color: #f1f0f0;
     outline-style: outset;
 }
-
-.pupliarBook .popL {
-    font-size: 20px;
-    font-family: Lora,serif;
-    text-align: center;
-}
+    .poptext:hover {
+       background-color: #a5a0a0;
+    }
+    .pupliarBook .popL {
+        font-size: 20px;
+        font-family: Lora,serif;
+        text-align: center;
+    }
 
 .SeePopBook {
     width: 100%;
