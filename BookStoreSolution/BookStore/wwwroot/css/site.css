@@ -130,13 +130,24 @@ body {
 
 .sectionA {
     width: calc(50% - 0px);
-    
-    background-color: #2f6f61;
+    text-decoration: none;
+    font-size:25px;
+       background-color: #2f6f61;
 }
-    .sectionA:hover {
-       
-        background-color: #1c443b;
-    }
+.sectionAParagraf 
+
+{
+    text-align: -webkit-center;
+    color:aliceblue;
+}
+.sectionA:visited {
+    text-decoration: none;
+}
+.sectionA:hover {
+    text-decoration: none;
+
+    background-color: #1c443b;
+}
 
 
 .control-label {
