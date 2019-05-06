@@ -46,7 +46,7 @@ body {
     margin: 5px;
     text-align: center;
     font-size: 30px;
-    background-color: black;
+    background-color: #ee6e58;
     transition: width 2s, height 1s;
 }
 
@@ -92,32 +92,53 @@ body {
 }
 
 .SeePopBook {
-    width: 100%;    
-   margin-bottom:10px;   
+    width: 100%;
+    margin-bottom: 10px;
     background-color: black;
 }
 
 .seepopbookp {
-    color:azure;
+    color: azure;
     text-align: center;
     font-size: 40px;
 }
 
 .sectiondiv1 {
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
-    background-color:red;
-    height:100px;
-    width:100px;
+    background-color: #c0c3c3;
+    width: -webkit-fill-available;
+    height: auto;
 }
+
 .sectionimage {
     display: flex;
-   
+    width: 100%;
+    padding: 12px;
+    height: 100%;
+    -webkit-transition: width 1s;
 }
+    .sectionimage:hover {
+        width:103%;
+        height:103%;
+    }
 .section1 {
+
     display: flex;
-    flex-wrap: wrap;
 }
+
+.sectionA {
+    width: calc(50% - 0px);
+    
+    background-color: #2f6f61;
+}
+    .sectionA:hover {
+       
+        background-color: #1c443b;
+    }
+
+
 .control-label {
     background-color: #eb8585;
     color: black;
