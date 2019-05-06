@@ -42,18 +42,19 @@ body {
 .childrow1 {
     justify-content: center;
     width: 100%;
-    height: 100px;
+    height: 200px;
     margin: 5px;
     text-align: center;
     font-size: 30px;
     background-color: #ee6e58;
     transition: width 2s, height 1s;
+    outline: 4px solid #000000;
 }
 
     .childrow1:hover {
         background-color: #085046;
         width: 110%;
-        height: 110px;
+        height: 210px;
         margin: 5px;
         text-align: center;
         outline-style: solid;
