@@ -51,16 +51,18 @@ body {
     font-size: 30px;
     background-color: #3d6b4d; 
     transition: width 0.5s, height 0.5s;
-    outline: 4px solid #000000;
+    outline: 2px solid #000000;
 }
-
-    .childrow1:hover {
-        background-color: #085046;       
-        margin: 5px;
-        text-align: center;
-        outline-style: solid;
-        outline-color: #086d5f;
-    }
+.childrow1a {
+    text-decoration: none;
+}
+.childrow1:hover {
+    background-color: #085046;
+    margin: 5px;
+    text-align: center;
+    outline-style: solid;
+    outline-color: #086d5f;
+}
 
 .prow {
     font-family: Arial;
