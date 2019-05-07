@@ -55,9 +55,9 @@ namespace BookStore.Controllers
                     db.SaveChanges();
 
                     }
-                    catch (Exception ex)
+                    catch (Exception )
                     {
-                        Console.WriteLine(ex.Message);
+                        
                         throw;
                     }
                 }
