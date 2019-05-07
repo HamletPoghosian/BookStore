@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BookStore.Models;
+using BookStore.DataBase;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookStore.Controllers
 {
@@ -12,8 +14,21 @@ namespace BookStore.Controllers
     {
         public IActionResult Index()
         {
-
-            return View();
+            List<Book> books = new List<Book>();
+            using (var db = new AppContextForBook())
+            {
+                books = db.Books.Select(book => new Book
+                {
+                    Name = book.Name,
+                    Author=book.Author,
+                    PublishDate=book.PublishDate,
+                    Price=book.Price,
+                    Popular=book.Popular
+                }).ToList();
+                   
+                  
+            };
+                 return View(books);
         }
 
         public IActionResult About()
