@@ -52,8 +52,8 @@
     </p>
 </div>
 <div class="rowbook">
-    
-    @for (int i = 0; i <( Model.Count < 4 ? Model.Count : 4); i++)
+
+    @for (int i = 0; i < (Model.Count < 4 ? Model.Count : 4); i++)
     {
         <div class="childrow1">
             <div>
@@ -65,16 +65,21 @@
                         <p class="prow">
                             @Model[i].Author
                         </p>
-                        <p class="prow">
-                            @Model[i].Price
+                        <p class="prowPrice">
+                            @Model[i].Price $
                         </p>
                         <p class="prow">
                             @Model[i].PublishDate.ToString("MM/dd/yyyy")
                         </p>
                         <p class="prow">
-                            @Model[i].Popular
+                            @{
+                                for (int j = 0; j < Model[i].Popular; j++)
+                                {
+                            <span class="star">&star;</span>
+                                }
+                            }
                         </p>
-                        </a>
+                    </a>
                 </div>
             </div>
         </div>
@@ -82,33 +87,38 @@
 
 </div>
 <div class="rowbook">
-    @for (int i = 4; i <( Model.Count<10?Model.Count:10); i++)
+    @for (int i = 4; i < (Model.Count < 10 ? Model.Count : 10); i++)
     {
-    <div class="childrow1">
-        <div>
+        <div class="childrow1">
             <div>
-                <a class="childrow1a" href="#">
-                    <p class="prow">
-                        @Model[i].Name
-                    </p>
-                    <p class="prow">
-                        @Model[i].Author
-                    </p>
-                    <p class="prow">
-                        @Model[i].Price
-                    </p>
-                    <p class="prow">
-                        @Model[i].PublishDate.ToString("MM/dd/yyyy")
-                    </p>
-                    <p class="prow">
-                        @Model[i].Popular
-                    </p>
+                <div>
+                    <a class="childrow1a" href="#">
+                        <p class="prow">
+                            @Model[i].Name
+                        </p>
+                        <p class="prow">
+                            @Model[i].Author
+                        </p>
+                        <p class="prowPrice">
+                            @Model[i].Price $
+                        </p>
+                        <p class="prow">
+                            @Model[i].PublishDate.ToString("MM/dd/yyyy")
+                        </p>
+                        <p class="prow">
+                            @{
+                                for (int j = 0; j < Model[i].Popular; j++)
+                                {
+                            <span class="star">&star;</span>
+                                }
+                            }
+                        </p>
                     </a>
+                </div>
             </div>
         </div>
-    </div>
-    }    
-   
+    }
+
 </div>
 <div class="rowbook">
     @for (int i = 10; i < (Model.Count < 13 ? Model.Count : 13); i++)
@@ -116,21 +126,26 @@
         <div class="childrow1">
             <div>
                 <div>
-                    <a class="childrow1a" href="#">                        
+                    <a class="childrow1a" href="#">
                         <p class="prow">
                             @Model[i].Name
                         </p>
                         <p class="prow">
                             @Model[i].Author
                         </p>
-                        <p class="prow">
-                            @Model[i].Price
+                        <p class="prowPrice">
+                            @Model[i].Price $
                         </p>
                         <p class="prow">
                             @Model[i].PublishDate.ToString("MM/dd/yyyy")
                         </p>
                         <p class="prow">
-                            @Model[i].Popular
+                            @{
+                                for (int j = 0; j < Model[i].Popular; j++)
+                                {
+                            <span class="star">&star;</span>
+                                }
+                            }
                         </p>
                     </a>
                 </div>
