@@ -29,6 +29,7 @@ body {
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img {
     width: 100%;
+    height: auto;
 }
 
 .rowbook {
@@ -48,7 +49,7 @@ body {
     margin: 5px;
     text-align: center;
     font-size: 30px;
-    background-color: #ee6e58;
+    background-color: #3d6b4d; /*#ee6e58;*/
     transition: width 0.5s, height 0.5s;
     outline: 4px solid #000000;
 }
@@ -192,12 +193,22 @@ display:flex;
     height: auto;
 }
 .readbook {
-    width: 300px;
+    width: 250px;
     height: auto;
     border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.imagecicelP {
+text-align:center;
+font-size:20px;
+
+}
+.imagehrforcicel {
+    width: 80%;
+    height: 2px;
+    background-color: #2f6f61;
 }
 .Insert-Page-Image-book img {
     display: flex;
