@@ -36,8 +36,7 @@ namespace BookStore.Controllers
         public ActionResult Create(Book collection)
         {
             try
-            {
-               
+            {               
                 using (var db=new AppContextForBook())
                 {
                     var book = new Book
@@ -47,7 +46,6 @@ namespace BookStore.Controllers
                         Price=collection.Price,
                         Popular=collection.Popular,
                         PublishDate=collection.PublishDate
-
                     };
                     try
                     {
@@ -56,8 +54,7 @@ namespace BookStore.Controllers
 
                     }
                     catch (Exception )
-                    {
-                        
+                    {                        
                         throw;
                     }
                 }
