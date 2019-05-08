@@ -25,8 +25,7 @@ namespace BookStore.Controllers
                     Price=book.Price,
                     Popular=book.Popular
                 }).ToList();
-                   
-                  
+                
             };
                  return View(books);
         }

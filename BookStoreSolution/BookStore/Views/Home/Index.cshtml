@@ -58,8 +58,9 @@
         <div class="childrow1">
             <div>
                 <div>
-                    <a class="childrow1a" href="#">
+                    <a class="childrow1a" href="@Url.Action("Details", "Books", @Model[i]);">
                         <p class="prow">
+                       
                             @Model[i].Name
                         </p>
                         <p class="prow">
@@ -75,7 +76,7 @@
                             @{
                                 for (int j = 0; j < Model[i].Popular; j++)
                                 {
-                            <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
                                 }
                             }
                         </p>

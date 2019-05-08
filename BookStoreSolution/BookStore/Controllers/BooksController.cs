@@ -19,9 +19,13 @@ namespace BookStore.Controllers
         }
 
         // GET: Books/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(Book bookName)
         {
-            return View();
+            using (var db = new AppContextForBook())
+            {
+                var book = db.Books.Where(x => x.Name == bookName.Name).FirstOrDefault();
+               return View(book);
+            }
         }
 
         // GET: Books/Create
