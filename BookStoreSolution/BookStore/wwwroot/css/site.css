@@ -73,13 +73,25 @@ height:auto;
 width:90%;
 height:auto;
 }
+.bookshowvalue {
+margin-left:50px;
+
+}
 .bookname {
     font-size: 50px;
     font-family: "TheMix_500",Helvetica,Arial,sans-serif;
-    color:goldenrod;
+    color: goldenrod;
 }
 .bookautor {
     font-size: 25px;
+}
+.bookdate {
+font-size:15px;
+}
+.bookprise {
+
+font-size:25px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .topbookshow {
     width: 100%;
