@@ -49,19 +49,28 @@ body {
     margin: 5px;
     text-align: center;
     font-size: 30px;
-    background-color: #3d6b4d; 
+    background-color: #4c4c4c;
     transition: width 0.5s, height 0.5s;
-    outline: 2px solid #000000;
+    outline: 1px solid #000000;
 }
 .childrow1a {
     text-decoration: none;
+    text-decoration-color: red;
 }
+a {
+    text-decoration-color: red;
+}
+
+}
+
 .childrow1:hover {
-    background-color: #085046;
+   
     margin: 5px;
     text-align: center;
     outline-style: solid;
     outline-color: #086d5f;
+    text-decoration: none;
+   
 }
 
 .prow {
@@ -171,7 +180,10 @@ background-color:azure;
 
     background-color: #1c443b;
 }
+a:hover {
+text-decoration:none;
 
+}
 
 .control-label {
     background-color: #eb8585;
