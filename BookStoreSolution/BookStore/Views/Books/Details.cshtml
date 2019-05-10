@@ -12,14 +12,14 @@
 <div class="bookshow">
 
     <div class="bookimage">
-        <img class="showbookimg" src="https://i.pinimg.com/originals/8d/34/3e/8d343e653ded05b99fef7ce135ee5c65.gif" alt="Text" />
+        <img class="showbookimg" src="https://www.iasbee.com/wp-content/uploads/2019/03/book_preloader.gif" alt="Text" />
     </div>
     <div class="bookshowvalue ">
         <p class="bookname">
             @Html.DisplayFor(model => model.Name)
         </p>
         <p class=" bookautor">
-           by @Html.DisplayFor(model => model.Author)
+            by @Html.DisplayFor(model => model.Author)
         </p>
         <p class="bookdate">
             ISBN: 9780525539643
@@ -30,12 +30,17 @@
         </p>
         <p class=" bookprise">
 
+            <span>&euro;</span>
             @Html.DisplayFor(model => model.Price)
         </p>
         <p class="bookpopular">
-            @Html.DisplayFor(model => model.Popular)
-        </p>
+            @for (int i = 0; i < Model.Popular; i++)
+            {
+                <span class="starshowbook">&#9733;</span>
+            }
 
+        </p>
+        <button class="showbookbutton">Buy</button>
     </div>
 
 </div>

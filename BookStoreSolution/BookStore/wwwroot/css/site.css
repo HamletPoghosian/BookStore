@@ -56,49 +56,7 @@ body {
 a {
     text-decoration-color: red;
 }
-.bookshow {
-    width: 100%;
-    height: 500px;
-    display: flex;
-}
-.bookimage {
-width:50%;
-height:auto;
 
-}
-.showbookimg {
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-width:90%;
-height:auto;
-}
-.bookshowvalue {
-margin-left:50px;
-
-}
-.bookname {
-    font-size: 50px;
-    font-family: "TheMix_500",Helvetica,Arial,sans-serif;
-    color: goldenrod;
-}
-.bookautor {
-    font-size: 25px;
-}
-.bookdate {
-font-size:15px;
-}
-.bookprise {
-
-font-size:25px;
-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.topbookshow {
-    width: 100%;
-    height: 30px;
-    background-color: darkgray;
-    margin-bottom: 10px;
-}
 .childrow1:hover {
     background-color: #384046;
     margin: 5px;
@@ -262,13 +220,91 @@ font-size:20px;
 }
 .star {
        font-size:120%;
-        color:red;
+        color:goldenrod;
+}
+.bookshow {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.bookimage {
+    width: 50%;
+    height: auto;
+}
+
+.showbookimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+}
+
+.bookshowvalue {
+    margin-left: 50px;
+}
+
+.bookname {
+    font-size: 50px;
+    font-family: "TheMix_500",Helvetica,Arial,sans-serif;
+    color: goldenrod;
+}
+
+.bookautor {
+    font-size: 25px;
+}
+
+.bookdate {
+    font-size: 15px;
+}
+
+.bookprise {
+    width: max-content;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    outline: solid;
+    outline-color: goldenrod;
+}
+
+.topbookshow {
+    width: 100%;
+    height: 30px;
+    background-color: darkgray;
+    margin-bottom: 10px;
+}
+.starshowbook {
+    color: goldenrod;
+    font-size: 50px;
+}
+.showbookbutton {
+    background-color: #555555; 
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.showbookbutton:hover {
+    background-color: goldenrod;
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 .prowPrice {
-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size:30px;
-color:red;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: red;
 }
 .Insert-Page-Image-book img {
     display: flex;
