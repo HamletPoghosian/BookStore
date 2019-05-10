@@ -6,44 +6,37 @@
 }
 
 <h2>Details</h2>
+<div class="topbookshow">
 
-<div>
-    <h4>Book</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd>
+</div>
+<div class="bookshow">
+
+    <div class="bookimage">
+        <img class="showbookimg" src="https://i.pinimg.com/originals/8d/34/3e/8d343e653ded05b99fef7ce135ee5c65.gif" alt="Text" />
+    </div>
+    <div class="bookshowvalue ">
+        <p class="bookname">
             @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Author)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Author)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.PublishDate)
-        </dt>
-        <dd>
+        </p>
+        <p class=" bookautor">
+           by @Html.DisplayFor(model => model.Author)
+        </p>
+        <p class="bookdate">
+
             @Html.DisplayFor(model => model.PublishDate)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd>
+        </p>
+        <p class=" bookprise">
+
             @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Popular)
-        </dt>
-        <dd>
+        </p>
+        <p class="bookpopular">
             @Html.DisplayFor(model => model.Popular)
-        </dd>
-    </dl>
+        </p>
+
+    </div>
+
 </div>
 <div>
-    
+
     <a asp-action="Index">Back to List</a>
 </div>
