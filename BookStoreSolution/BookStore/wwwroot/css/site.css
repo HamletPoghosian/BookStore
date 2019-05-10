@@ -278,34 +278,68 @@ font-size:20px;
     font-size: 50px;
 }
 .showbookbutton {
-    background-color: #555555; 
+    background-color: #555555;
     border: none;
     color: white;
     padding: 10px 30px;
+    outline: solid;
+    outline-color: #555555;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 25px;
     margin: 4px 2px;
     cursor: pointer;
+    margin-bottom:8px;
 }
-.showbookbutton:hover {
-    background-color: goldenrod;
+    .showbookbutton:hover {
+        background-color: goldenrod;
+        border: none;
+        color: black;
+        padding: 10px 30px;
+        text-align: center;
+        outline: solid;
+        outline-color: goldenrod;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        margin: 4px 2px;
+        cursor: pointer;
+        margin-bottom: 8px;
+    }
+.showbookbutton1 {
+    background-color: white; 
     border: none;
     color: black;
     padding: 10px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    outline:solid;
+    outline-color:goldenrod;
     font-size: 25px;
     margin: 4px 2px;
     cursor: pointer;
 }
-.prowPrice {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    color: red;
-}
+    .showbookbutton1:hover {
+        background-color: goldenrod;
+        border: none;
+        color: white;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        outline: solid;
+        outline-color: goldenrod;
+        font-size: 25px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    .prowPrice {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 30px;
+        color: red;
+    }
 .Insert-Page-Image-book img {
     display: flex;
 }
