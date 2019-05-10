@@ -58,7 +58,7 @@ a {
 }
 
 .childrow1:hover {
-    background-color: #384046;
+    background-color: #1c1d1f;
     margin: 5px;
     text-align: center;
     outline-style: solid;
@@ -335,11 +335,15 @@ font-size:20px;
         margin: 4px 2px;
         cursor: pointer;
     }
-    .prowPrice {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 30px;
-        color: red;
-    }
+.prowPrice {
+    width: max-content;
+    background-color:goldenrod;
+    margin-left:auto;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+    color: black;
+  
+}
 .Insert-Page-Image-book img {
     display: flex;
 }
