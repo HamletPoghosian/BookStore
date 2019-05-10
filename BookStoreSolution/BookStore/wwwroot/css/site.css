@@ -7,6 +7,9 @@ body {
 .container {
     width: 90%;
 }
+.navbar navbar-inverse navbar-fixed-top {
+    display: flex;
+}
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 #myCarousel {
@@ -31,7 +34,10 @@ body {
     width: max-content;
    margin:auto;
 }
-
+.cart {
+    float: right;
+    width:40px;
+}
 .rowbook {
     display: flex;
 }
