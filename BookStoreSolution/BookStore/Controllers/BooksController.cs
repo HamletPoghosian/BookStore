@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Web;
-using BookStore.DataBase;
+
 using BookStore.Models;
+using BookStore.Data;
 
 namespace BookStore.Controllers
 {

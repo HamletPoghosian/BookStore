@@ -5,8 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BookStore.Models;
-using BookStore.DataBase;
 using Microsoft.EntityFrameworkCore;
+using BookStore.Data;
 
 namespace BookStore.Controllers
 {
