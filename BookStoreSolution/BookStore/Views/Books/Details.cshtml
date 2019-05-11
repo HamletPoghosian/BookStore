@@ -40,9 +40,9 @@
             }
 
         </p>
-        <button class="showbookbutton">Buy</button>
+        <button  class="showbookbutton">Buy</button>
         <br>
-        <button class="showbookbutton1">Add to Cart</button>
+        <button  asp-action="AddCart" asp-controller="Books" asp-route-Id="@Model.Id" class="showbookbutton1">Add to Cart</button>
     </div>
 
 </div>

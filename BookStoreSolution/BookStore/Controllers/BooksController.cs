@@ -13,6 +13,8 @@ namespace BookStore.Controllers
 {
     public class BooksController : Controller
     {
+
+        UserBuyBook us=new UserBuyBook();
         // GET: Books
         public ActionResult Index()
         {
@@ -25,7 +27,7 @@ namespace BookStore.Controllers
             using (var db = new AppContextForBook())
             {
                 var book = db.Books.Where(x => x.Id == Id).FirstOrDefault();
-               return View(book);
+                return View(book);
             }
         }
 
@@ -34,43 +36,58 @@ namespace BookStore.Controllers
         {
             return View();
         }
-       
+
         // POST: Books/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Book collection)
         {
             try
-            {               
-                using (var db=new AppContextForBook())
+            {
+                using (var db = new AppContextForBook())
                 {
                     var book = new Book
                     {
-                        Name=collection.Name,
-                        Author=collection.Author,
-                        Price=collection.Price,
-                        Popular=collection.Popular,
-                        PublishDate=collection.PublishDate
+                        Name = collection.Name,
+                        Author = collection.Author,
+                        Price = collection.Price,
+                        Popular = collection.Popular,
+                        PublishDate = collection.PublishDate
                     };
                     try
                     {
-                    db.Books.AddRange(book);
-                    db.SaveChanges();
+                        db.Books.AddRange(book);
+                        db.SaveChanges();
 
                     }
-                    catch (Exception )
-                    {                        
+                    catch (Exception)
+                    {
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Create));
+                return RedirectToAction(nameof(Details));
             }
             catch
             {
                 return View();
             }
         }
-
+        public void AddCart(int Id)
+        {
+            
+            using (var db = new AppContextForBook())
+            {
+               
+                var book = db.Books.Where(x => x.Id == Id).FirstOrDefault();
+                us.Add(book);
+               
+            }
+           
+        }
+        public ActionResult Cart()
+        {
+            return View(us.showAllCart());
+        }
         // GET: Books/Edit/5
         public ActionResult Edit(int id)
         {
