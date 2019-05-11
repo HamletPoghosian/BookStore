@@ -1,15 +1,12 @@
-﻿using BookStore.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace BookStore.DataBase
+namespace BookStore.Data
 {
-    public class AppContextForBook:DbContext
+
+    public class AppContextForBook : DbContext
     {
-        public DbSet<Book> Books { get; set; }        
+        public DbSet<Book> Books { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(

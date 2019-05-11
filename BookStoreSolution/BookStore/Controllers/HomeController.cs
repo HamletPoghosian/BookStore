@@ -19,6 +19,7 @@ namespace BookStore.Controllers
             {
                 books = db.Books.Select(book => new Book
                 {
+                    Id=book.Id,
                     Name = book.Name,
                     Author=book.Author,
                     PublishDate=book.PublishDate,
