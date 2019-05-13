@@ -14,7 +14,7 @@ namespace BookStore.Controllers
     public class BooksController : Controller
     {
 
-        UserBuyBook us=new UserBuyBook();
+       
         // GET: Books
         public ActionResult Index()
         {
@@ -24,6 +24,7 @@ namespace BookStore.Controllers
         // GET: Books/Details/5
         public ActionResult Details(int Id)
         {
+           
             using (var db = new AppContextForBook())
             {
                 var book = db.Books.Where(x => x.Id == Id).FirstOrDefault();
@@ -79,14 +80,14 @@ namespace BookStore.Controllers
             {
                
                 var book = db.Books.Where(x => x.Id == Id).FirstOrDefault();
-                us.Add(book);
+               
                
             }
            
         }
         public ActionResult Cart()
         {
-            return View(us.showAllCart());
+            return View();
         }
         // GET: Books/Edit/5
         public ActionResult Edit(int id)

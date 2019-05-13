@@ -14,6 +14,6 @@ namespace BookStore.Models
         public DateTime PublishDate { get; set; }
         public int Price { get; set; }
         public int Popular { get; set; }
-
+        
     }
 }
