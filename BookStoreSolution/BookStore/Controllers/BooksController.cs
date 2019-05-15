@@ -8,6 +8,7 @@ using System.Web;
 
 using BookStore.Models;
 using BookStore.Data;
+using BookStore.ViewModel;
 
 namespace BookStore.Controllers
 {
@@ -41,7 +42,7 @@ namespace BookStore.Controllers
         // POST: Books/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Book collection)
+        public ActionResult Create(NewBook model)
         {
             try
             {
@@ -49,11 +50,11 @@ namespace BookStore.Controllers
                 {
                     var book = new Book
                     {
-                        Name = collection.Name,
-                        Author = collection.Author,
-                        Price = collection.Price,
-                        Popular = collection.Popular,
-                        PublishDate = collection.PublishDate
+                        Name = model.Name,
+                        Author = model.Author,
+                        Price = model.Price,
+                        Popular = model.Popular,
+                        PublishDate = model.PublishDate
                     };
                     try
                     {
