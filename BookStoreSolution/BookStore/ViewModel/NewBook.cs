@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 namespace BookStore.ViewModel
 {
     public class NewBook
-    {
-       
+    {       
         public string Name { get; set; }
         public string Author { get; set; }
         public DateTime PublishDate { get; set; }
