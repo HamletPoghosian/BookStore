@@ -9,12 +9,7 @@ namespace BookStore.Data
     {
         public AppContextForBook(DbContextOptions<AppContextForBook> options) : base(options)
         { }
-        public DbSet<Book> Books { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(
-                  @"Server=(localdb)\mssqllocaldb;Database=Book_EFCore;Integrated Security=True");
-        }
+        public DbSet<Book> Books { get; set; }       
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Book>(e =>
